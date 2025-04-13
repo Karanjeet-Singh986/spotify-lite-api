@@ -1,18 +1,18 @@
-# Base image
+# Use official Node image
 FROM node:18
 
-# Set working directory inside container
-WORKDIR /app
+# Create app directory
+WORKDIR /usr/src/app
 
-# Copy package files and install dependencies
+# Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the project files
+# Copy the rest of the code
 COPY . .
 
-# Expose app port
+# Expose port
 EXPOSE 8000
 
-# Start the application
-CMD ["npm", "start"]
+# Run app
+CMD ["node", "server.js"]
