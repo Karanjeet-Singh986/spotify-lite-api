@@ -1,0 +1,29 @@
+{
+  "name": "spotify-lite-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+  "start": "node server.js",
+  "test": "jest"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karanjeet-Singh986/spotify-lite-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karanjeet-Singh986/spotify-lite-api/issues"
+  },
+  "homepage": "https://github.com/Karanjeet-Singh986/spotify-lite-api#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
